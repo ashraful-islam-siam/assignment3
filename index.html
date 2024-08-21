@@ -21,6 +21,68 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <h3 class="text-4xl text-center text-red-500">Just started</h3>
+    <!-- Header -->
+    <header class="container mx-auto">
+      <!-- Navbar -->
+      <nav class="navbar bg-base-100">
+        <div class="navbar-start flex items-center gap-2">
+          <i
+            class="fa-solid fa-arrow-right bg-green-300 py-2 px-2.5 rounded-full"
+          ></i>
+          <a class="text-2xl font-bold">Rinterio</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1 text-lg text-gray-500">
+            <li><a href="" class="text-slate-800 font-semibold">Home</a></li>
+            <li>
+              <a
+                href=""
+                class="hover:text-slate-800 duration-300 hover:font-semibold"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a
+                href=""
+                class="hover:text-slate-800 duration-300 hover:font-semibold"
+                >Portfolio</a
+              >
+            </li>
+            <li>
+              <a
+                href=""
+                class="hover:text-slate-800 duration-300 hover:font-semibold"
+                >Blogs</a
+              >
+            </li>
+            <li>
+              <a
+                href=""
+                class="hover:text-slate-800 duration-300 hover:font-semibold"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <div class="dropdown dropdown-bottom dropdown-end md:hidden">
+            <div tabindex="0" role="button" class="m-1">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+            <ul
+              tabindex="0"
+              class="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow"
+            >
+              <li><a href="">Home</a></li>
+              <li><a href="">Services</a></li>
+              <li><a href="">Portfolio</a></li>
+              <li><a href="">Blogs</a></li>
+              <li><a href="">Contact Us</a></li>
+            </ul>
+          </div>
+          <button class="btn hidden md:block">Book Consult</button>
+        </div>
+      </nav>
+    </header>
   </body>
 </html>
