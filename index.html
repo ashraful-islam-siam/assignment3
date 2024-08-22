@@ -23,7 +23,7 @@
   <body>
     <!-- Header -->
     <header class="container mx-auto bg-[#f4f4f4]">
-      <!-- Navbar -->
+      <!-- Navbar start -->
       <nav class="navbar bg-base-100">
         <div class="navbar-start flex items-center gap-2">
           <i
@@ -66,7 +66,11 @@
         </div>
         <div class="navbar-end">
           <div class="dropdown dropdown-bottom dropdown-end md:hidden">
-            <div tabindex="0" role="button" class="m-1">
+            <div
+              tabindex="0"
+              role="button"
+              class="m-1 bg-gray-200 w-12 h-12 flex items-center justify-center text-lg rounded-full"
+            >
               <i class="fa-solid fa-bars"></i>
             </div>
             <ul
@@ -105,15 +109,25 @@
             ></i>
           </div>
           <button
-            class="btn hidden md:block bg-green-200 hover:bg-green-100 hover:border-none"
+            class="btn hidden md:block bg-green-200 hover:bg-green-100 hover:border-none rounded-xl"
           >
             Book Consult
             <i
-              class="fa-solid fa-arrow-right bg-green-300 ml-1 py-2 px-2.5 rounded-full -rotate-45"
+              class="fa-solid fa-arrow-right bg-black text-white ml-1 py-2 px-2.5 rounded-full -rotate-45"
             ></i>
           </button>
         </div>
       </nav>
+      <!-- Navbar end -->
+
+      <!-- Banner start -->
+      <section class="text-center">
+        <img class="w-2/3 md:w-1/2 mx-auto" src="./assets/banner.png" alt="" />
+        <h1 class="text-4xl font-bold">
+          A barn house of this design has a striking appearance
+        </h1>
+      </section>
+      <!-- Banner end -->
     </header>
   </body>
 </html>
