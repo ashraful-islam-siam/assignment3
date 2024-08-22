@@ -22,12 +22,12 @@
   </head>
   <body>
     <!-- Header -->
-    <header class="container mx-auto">
+    <header class="container mx-auto bg-[#f4f4f4]">
       <!-- Navbar -->
       <nav class="navbar bg-base-100">
         <div class="navbar-start flex items-center gap-2">
           <i
-            class="fa-solid fa-arrow-right bg-green-300 py-2 px-2.5 rounded-full"
+            class="fa-solid fa-arrow-right bg-green-300 py-2 px-2.5 rounded-full -rotate-45"
           ></i>
           <a class="text-2xl font-bold">Rinterio</a>
         </div>
@@ -37,7 +37,7 @@
             <li>
               <a
                 href=""
-                class="hover:text-slate-800 duration-300 hover:font-semibold"
+                class="hover:text-slate-800 duration-300 hover:font-semibold hover:bg-none"
                 >Services</a
               >
             </li>
@@ -78,9 +78,40 @@
               <li><a href="">Portfolio</a></li>
               <li><a href="">Blogs</a></li>
               <li><a href="">Contact Us</a></li>
+              <div class="py-1">
+                <i
+                  class="fa-solid fa-magnifying-glass p-3 bg-gray-100 mr-1 rounded-full text-black hover:bg-gray-200"
+                ></i>
+                <i
+                  class="fa-solid fa-cart-shopping p-3 bg-gray-100 mr-2 rounded-full text-black hover:bg-gray-200"
+                ></i>
+              </div>
+              <button
+                class="btn bg-green-200 hover:bg-green-100 hover:border-none"
+              >
+                Book Consult
+                <i
+                  class="fa-solid fa-arrow-right bg-green-300 ml-1 py-2 px-2.5 rounded-full -rotate-45"
+                ></i>
+              </button>
             </ul>
           </div>
-          <button class="btn hidden md:block">Book Consult</button>
+          <div class="hidden md:block">
+            <i
+              class="fa-solid fa-magnifying-glass p-3 bg-gray-100 mr-1 rounded-full text-black hover:bg-gray-200"
+            ></i>
+            <i
+              class="fa-solid fa-cart-shopping p-3 bg-gray-100 mr-2 rounded-full text-black hover:bg-gray-200"
+            ></i>
+          </div>
+          <button
+            class="btn hidden md:block bg-green-200 hover:bg-green-100 hover:border-none"
+          >
+            Book Consult
+            <i
+              class="fa-solid fa-arrow-right bg-green-300 ml-1 py-2 px-2.5 rounded-full -rotate-45"
+            ></i>
+          </button>
         </div>
       </nav>
     </header>
