@@ -19,6 +19,18 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind Config -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "primary-color": "#ABEF5F",
+            },
+          },
+        },
+      };
+    </script>
   </head>
   <body>
     <!-- Header -->
@@ -27,7 +39,7 @@
       <nav class="navbar bg-base-100">
         <div class="navbar-start flex items-center gap-2">
           <i
-            class="fa-solid fa-arrow-right bg-[#ABEF5F] py-2 px-2.5 rounded-full -rotate-45"
+            class="fa-solid fa-arrow-right bg-primary-color py-2 px-2.5 rounded-full -rotate-45"
           ></i>
           <a class="text-2xl font-bold">Rinterio</a>
         </div>
@@ -109,7 +121,7 @@
             ></i>
           </div>
           <button
-            class="btn hidden md:block bg-[#ABEF5F] hover:bg-green-100 hover:border-none rounded-xl text-lg font-semibold"
+            class="btn hidden md:block bg-primary-color hover:bg-green-100 hover:border-none rounded-xl text-lg font-semibold"
           >
             Book Consult
             <i
@@ -121,9 +133,9 @@
       <!-- Navbar end -->
 
       <!-- Banner start -->
-      <section class="text-center pb-12 px-5">
+      <section class="text-center pb-12 px-5 bg-white">
         <img class="w-2/3 md:w-1/2 mx-auto" src="./assets/banner.png" alt="" />
-        <h1 class="text-4xl md:text-7xl font-bold">
+        <h1 class="text-4xl md:text-6xl font-bold">
           A barn house of this design has a striking appearance
         </h1>
         <p class="md:w-2/3 mx-auto mt-5">
@@ -133,7 +145,7 @@
         </p>
 
         <button
-          class="btn mt-3 bg-[#ABEF5F] border-green-200 hover:border-none rounded-xl text-lg font-semibold"
+          class="btn mt-3 bg-primary-color border-green-200 hover:border-none rounded-xl text-lg font-semibold hover:bg-primary-color"
         >
           Book Consult
           <i
@@ -143,5 +155,71 @@
       </section>
       <!-- Banner end -->
     </header>
+    <!-- Header end -->
+
+    <!-- Main start -->
+    <main class="container mx-auto">
+      <!-- About start -->
+      <section class="container mx-auto bg-slate-100 p-3">
+        <div>
+          <img class="hidden md:block mb-2" src="./assets/Vector.png" alt="" />
+          <div class="md:flex items-center justify-center">
+            <div class="ml-5 text-center md:text-left flex-grow md:w-2/5">
+              <h3 class="text-lg bg-white rounded-xl py-3 px-4 inline-block">
+                <i class="fa-solid fa-arrow-right"></i> About us
+              </h3>
+              <h2 class="text-3xl font-bold mt-5">
+                We design thoughtful, <br />
+                liveable spaces
+              </h2>
+              <p class="md:w-2/3 mx-auto md:m-0 md:mt-3 md:mb-5">
+                The barn house captivates with its blend of rustic charm and
+                modern sophistication, featuring weathered wood, sleek metal
+                accents.
+              </p>
+              <!-- Card -->
+
+              <div
+                class="card mt-3 bg-white md:w-2/3 flex items-center flex-row gap-5 py-5 px-8 rounded-xl"
+              >
+                <div>
+                  <img src="./assets/commercial.png" alt="" />
+                </div>
+                <div class="">
+                  <h3 class="text-lg font-semibold text-left">Commercial</h3>
+                  <p class="text-left">
+                    The barn house captivates with its blend of rustic charm and
+                    modern.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="card mt-3 bg-white md:w-2/3 flex items-center flex-row gap-5 py-5 px-8 rounded-xl"
+              >
+                <div>
+                  <img src="./assets/residential.png" alt="" />
+                </div>
+                <div>
+                  <h3 class="text-lg font-semibold text-left">Residential</h3>
+                  <p class="text-left">
+                    The barn house captivates with its blend of rustic charm and
+                    modern.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="p-5">
+              <img
+                class="w-full ml-3 md:m-0"
+                src="./assets/Rectangle.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- About end -->
+    </main>
+    <!-- Main end -->
   </body>
 </html>
