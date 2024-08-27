@@ -12,6 +12,14 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- Tailwind CSS and Daisy UI cdn -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
@@ -21,6 +29,9 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Styles -->
     <style>
+      .font-manrope {
+        font-family: "Manrope", sans-serif;
+      }
       .form-container {
         background-image: url("./assets/bg.jpg");
         background-repeat: no-repeat;
@@ -50,7 +61,7 @@
       };
     </script>
   </head>
-  <body>
+  <body class="font-manrope">
     <!-- Header -->
     <header class="container mx-auto bg-[#f4f4f4]">
       <!-- Navbar start -->
